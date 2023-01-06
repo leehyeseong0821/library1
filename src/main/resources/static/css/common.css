@@ -8,6 +8,26 @@
     font-family: 'SUIT-Regular';
     font-size: 14px;
 }
+*::-webkit-scrollbar{
+    width: 8px;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #3e3e3e;
+    border-radius: 5px;
+}
+body{
+    height: 100%;
+    background-image: url(/static/images/main_backgrounds.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  /*스크롤 내려도 고정되게 설정*/
+}
+#container{
+    margin: 0px auto;
+    width: 1400px;
+}
+
 input,select, textarea,table, th, td{
     border: 1px solid #dbdbdb;
     border-radius: 4px;
@@ -18,4 +38,12 @@ input, textarea{
 
 input,textarea,select{
     padding: 5px;
+    cursor: pointer;
+}
+button{
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
 }

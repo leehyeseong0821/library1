@@ -9,6 +9,7 @@ article , aside, footer,header,nav,main{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 html,body{
     line-height: 1;
@@ -24,4 +25,7 @@ a{
 table{
     border-collapse: collapse;
     border-spacing: 0;
+}
+input, textarea, select {
+    box-sizing: border-box;
 }
