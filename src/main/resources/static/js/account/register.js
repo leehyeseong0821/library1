@@ -89,7 +89,7 @@ class RegisterApi {
             registerSubmit.onclick = () => {
                 const usernameValue = document.querySelectorAll(".register-inputs")[0].value;
                 const passwordValue = document.querySelectorAll(".register-inputs")[1].value;
-                const repasswordValue = document.querySelectorAll(".register-inputs")[1].value;
+                const repasswordValue = document.querySelectorAll(".register-inputs")[2].value;
                 const nameValue = document.querySelectorAll(".register-inputs")[3].value;
                 const emailValue = document.querySelectorAll(".register-inputs")[4].value;
 

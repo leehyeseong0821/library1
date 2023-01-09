@@ -30,8 +30,8 @@ public class UserDto {
     private String email;
 
     //권한은 여러개로 들고올 수 있기 때문에 List.
-    private List<RoleDtlDto> roleDtlDto;
-
     private LocalDateTime createDate;
     private LocalDateTime updateDate;
+
+    private List<RoleDtlDto> roleDtlDto;
 }
