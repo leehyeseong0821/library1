@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http.httpBasic().disable(); //기본적으로 제공하는 web basic로그인을 비활성화 한다.기존의 만든 로그인 페이지 사용예정
         http.authorizeRequests()
-                .antMatchers("/mypage/**")//요청 주소로 앞에 mypage가들어오면 이거랑 뒤에 무엇이 들어오든지 인증이 필요
+                .antMatchers("/mypage/**","/security/**")//요청 주소로 앞에 mypage가들어오면 이거랑 뒤에 무엇이 들어오든지 인증이 필요
                 .authenticated()
                 .anyRequest()//다른 모든 요청들은
                 .permitAll()//모든 권한을 준다 인증이 필요없다

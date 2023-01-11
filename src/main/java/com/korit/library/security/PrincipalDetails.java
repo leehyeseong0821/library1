@@ -20,6 +20,7 @@ public class PrincipalDetails implements UserDetails {
     private final UserDto user;
     private Map<String,Object> response;
 
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         ArrayList<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
